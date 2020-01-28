@@ -1,16 +1,18 @@
 import React, { Component } from "react";
 import styled, { css } from "styled-components";
+import '../App.css'
 import { responsiveFontSizes } from "@material-ui/core";
 
 function Index(props) {
   return (
     <Ellipse2Stack >
+      <div className="hidden">
       <svg
         viewBox="0 0 466.64 515.14"
         style={{
           top: 0,
-          left: 38,
-          width: 400,
+          left: 30,
+          width: 410,
           height: 520,
           position: "absolute",
           responsiveFontSizes
@@ -25,6 +27,7 @@ function Index(props) {
           ry={258}
         ></ellipse>
       </svg>
+      </div>
       <svg
         viewBox="0  327.82 328.09"
         style={{
@@ -62,7 +65,7 @@ const Moonlay = styled.span`
 
 const Ellipse2Stack = styled.div`
   
-  height: 68px;
+  height: 52px;
   width: 100%;
   position: relative;
 `;
