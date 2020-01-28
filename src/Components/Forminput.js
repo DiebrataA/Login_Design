@@ -3,14 +3,18 @@ import {TextField} from '@material-ui/core'
 export default class Forminput extends Component {
     render() {
         return (
+            <form noValidate autoComplete="off">
             <TextField 
-                   style={{width:"70%" , marginBottom: 30}}
+                   error = {this.handleValidate}
+                   style={{width:"70%"}}
                     required
                     id= {this.props.id}
                     type={this.props.type}
                     label= {this.props.label}
                     placeholder= {this.props.placeholder}
-                    color="primary"/>
+                    color="primary"
+                    helperText={this.props.helpertext}/>
+            </form>
         )
     }
 }

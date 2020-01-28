@@ -62,7 +62,7 @@ const Moonlay = styled.span`
 
 const Ellipse2Stack = styled.div`
   
-  height: 52px;
+  height: 68px;
   width: 100%;
   position: relative;
 `;
